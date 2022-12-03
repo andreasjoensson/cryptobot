@@ -108,7 +108,7 @@ def withdrawSol(cryptoAmount):
 
 
 checkBalance()
-#schedule.every().day.at("00:48").do(checkBalance)
-#while 1:
- #   schedule.run_pending()
-  #  time.sleep(1)
+schedule.every().day.at("00:48").do(checkBalance)
+while 1:
+  schedule.run_pending()
+  time.sleep(1)
